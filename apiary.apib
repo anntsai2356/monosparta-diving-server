@@ -1,0 +1,1189 @@
+FORMAT: 1A
+HOST: https://monosparta-api.trunksys.com/api/
+
+# Diving App API
+
+Here are some APIs for diving app.
+
+# Group Search
+
+## Spot Search [/spot]
+
+###  Show Spot Search List [GET /spot]
+
++ Response 200 (application/json)
+
+            {
+                "item": {
+                    "current_page": 1,
+                    "data": [
+                        {
+                            "id": 131,
+                            "name": "開元港藍洞",
+                            "county": "台東縣蘭嶼鄉",
+                            "img1": "https://live.staticflickr.com/2943/15146256078_76c3cb1884_z_d.jpg"
+                        },
+                        {
+                            "id": 130,
+                            "name": "青蛙石藍洞",
+                            "county": "台東縣蘭嶼鄉",
+                            "img1": "https://lh3.googleusercontent.com/4aPcNac7GIvNlYq53QOfai2s1dmNiE1hGBvzJBmRqPKelDZ1UgItB5Z8bwFiQ6guF9Xm69zdcZ1ge6KirMsYrzD3RD4rWoQU1rEvsni7aoGNUOoqCRZWf8Xn15y7eDTH-W5Ouj-u=w2405"
+                        },
+                        {
+                            "id": 129,
+                            "name": "三塊石",
+                            "county": "台東縣蘭嶼鄉",
+                            "img1": "https://lh3.googleusercontent.com/4aPcNac7GIvNlYq53QOfai2s1dmNiE1hGBvzJBmRqPKelDZ1UgItB5Z8bwFiQ6guF9Xm69zdcZ1ge6KirMsYrzD3RD4rWoQU1rEvsni7aoGNUOoqCRZWf8Xn15y7eDTH-W5Ouj-u=w2404"
+                        },
+                        {
+                            "id": 128,
+                            "name": "母雞岩外礁",
+                            "county": "台東縣蘭嶼鄉",
+                            "img1": "https://lh3.googleusercontent.com/4aPcNac7GIvNlYq53QOfai2s1dmNiE1hGBvzJBmRqPKelDZ1UgItB5Z8bwFiQ6guF9Xm69zdcZ1ge6KirMsYrzD3RD4rWoQU1rEvsni7aoGNUOoqCRZWf8Xn15y7eDTH-W5Ouj-u=w2403"
+                        },
+                        {
+                            "id": 127,
+                            "name": "機場外礁",
+                            "county": "台東縣蘭嶼鄉",
+                            "img1": "https://lh3.googleusercontent.com/4aPcNac7GIvNlYq53QOfai2s1dmNiE1hGBvzJBmRqPKelDZ1UgItB5Z8bwFiQ6guF9Xm69zdcZ1ge6KirMsYrzD3RD4rWoQU1rEvsni7aoGNUOoqCRZWf8Xn15y7eDTH-W5Ouj-u=w2402"
+                        },
+                        {
+                            "id": 126,
+                            "name": "四條溝",
+                            "county": "台東縣蘭嶼鄉",
+                            "img1": "https://lh3.googleusercontent.com/4aPcNac7GIvNlYq53QOfai2s1dmNiE1hGBvzJBmRqPKelDZ1UgItB5Z8bwFiQ6guF9Xm69zdcZ1ge6KirMsYrzD3RD4rWoQU1rEvsni7aoGNUOoqCRZWf8Xn15y7eDTH-W5Ouj-u=w2401"
+                        },
+                        {
+                            "id": 125,
+                            "name": "八代灣沈船",
+                            "county": "台東縣蘭嶼鄉",
+                            "img1": "https://lh3.googleusercontent.com/4aPcNac7GIvNlYq53QOfai2s1dmNiE1hGBvzJBmRqPKelDZ1UgItB5Z8bwFiQ6guF9Xm69zdcZ1ge6KirMsYrzD3RD4rWoQU1rEvsni7aoGNUOoqCRZWf8Xn15y7eDTH-W5Ouj-u=w2400"
+                        },
+                        {
+                            "id": 124,
+                            "name": "椰油斷層",
+                            "county": "台東縣蘭嶼鄉",
+                            "img1": "https://live.staticflickr.com/290/18348185404_779b5b903a_z_d.jpg"
+                        },
+                        {
+                            "id": 123,
+                            "name": "玉女岩外礁",
+                            "county": "台東縣蘭嶼鄉",
+                            "img1": "https://lh3.googleusercontent.com/4aPcNac7GIvNlYq53QOfai2s1dmNiE1hGBvzJBmRqPKelDZ1UgItB5Z8bwFiQ6guF9Xm69zdcZ1ge6KirMsYrzD3RD4rWoQU1rEvsni7aoGNUOoqCRZWf8Xn15y7eDTH-W5Ouj-u=w2400"
+                        },
+                        {
+                            "id": 122,
+                            "name": "雙獅岩",
+                            "county": "台東縣蘭嶼鄉",
+                            "img1": "https://live.staticflickr.com/2907/14555008188_22f2a64e08_z_d.jpg"
+                        },
+                        {
+                            "id": 121,
+                            "name": "東西吉廊道",
+                            "county": "澎湖縣望安鄉",
+                            "img1": "https://live.staticflickr.com/1758/27704039717_a0c24ca9b3_z_d.jpg"
+                        },
+                        {
+                            "id": 120,
+                            "name": "大坪前",
+                            "county": "澎湖縣望安鄉",
+                            "img1": "https://lh3.googleusercontent.com/4aPcNac7GIvNlYq53QOfai2s1dmNiE1hGBvzJBmRqPKelDZ1UgItB5Z8bwFiQ6guF9Xm69zdcZ1ge6KirMsYrzD3RD4rWoQU1rEvsni7aoGNUOoqCRZWf8Xn15y7eDTH-W5Ouj-u=w2402"
+                        },
+                        {
+                            "id": 119,
+                            "name": "西吉斷層",
+                            "county": "澎湖縣望安鄉",
+                            "img1": "https://lh3.googleusercontent.com/4aPcNac7GIvNlYq53QOfai2s1dmNiE1hGBvzJBmRqPKelDZ1UgItB5Z8bwFiQ6guF9Xm69zdcZ1ge6KirMsYrzD3RD4rWoQU1rEvsni7aoGNUOoqCRZWf8Xn15y7eDTH-W5Ouj-u=w2401"
+                        },
+                        {
+                            "id": 118,
+                            "name": "西吉城堡",
+                            "county": "澎湖縣望安鄉",
+                            "img1": "https://lh3.googleusercontent.com/4aPcNac7GIvNlYq53QOfai2s1dmNiE1hGBvzJBmRqPKelDZ1UgItB5Z8bwFiQ6guF9Xm69zdcZ1ge6KirMsYrzD3RD4rWoQU1rEvsni7aoGNUOoqCRZWf8Xn15y7eDTH-W5Ouj-u=w2400"
+                        },
+                        {
+                            "id": 117,
+                            "name": "花環公園",
+                            "county": "澎湖縣望安鄉",
+                            "img1": "https://live.staticflickr.com/65535/47879172291_4628da16b2_z_d.jpg"
+                        }
+                    ],
+                    "first_page_url": "http://monosparta-api.trunksys.com/api/spot?page=1",
+                    "from": 1,
+                    "last_page": 9,
+                    "last_page_url": "http://monosparta-api.trunksys.com/api/spot?page=9",
+                    "next_page_url": "http://monosparta-api.trunksys.com/api/spot?page=2",
+                    "path": "http://monosparta-api.trunksys.com/api/spot",
+                    "per_page": 15,
+                    "prev_page_url": null,
+                    "to": 15,
+                    "total": 131
+                },
+                "spotTotal": 15
+            }
+        
+### Show Spot Search with Location and Level [GET /spot/search{?location,level}]
+
++ Parameters
+    + location: north (Char, optional) - 地區
+        + All available parameters
+          | Location| Value  |
+          | :----:  | :-----: |
+          | 北部  　| north  |
+          | 中部    | mid    |
+          | 南部    | south  |
+          | 東部    | east   |
+          | 外島 　 | outer  | 
+    + level: medium (Char, optional) - 等級
+        + All available parameters
+          | Location| Value  |
+          | :----:  | :-----: |
+          | 初級  　| easy   |
+          | 中級    | midium |
+          | 高級    | hard   |
+
++ Response 200 (application/json)
+
+            {
+                "item": {
+                    "current_page": 1,
+                    "data": [
+                        {
+                            "id": 2,
+                            "created_at": "2019-08-13 05:22:47",
+                            "updated_at": "2019-08-13 05:22:47",
+                            "level": "medium",
+                            "location": "north",
+                            "name": "八斗子-祕密花園",
+                            "description": "此處為過去的垃圾掩埋場，現為潮境公園。行進須特別小心。此潛點最大深度約 25 Ｍ左右，由於上下潛點不易，海底還保留大量的軟珊瑚群， 有秘密花園之稱。",
+                            "county": "新北市瑞芳區",
+                            "avg_rating": 0,
+                            "longitude": "121.80286",
+                            "latitude": "25.13528",
+                            "img1": "https://lh3.googleusercontent.com/4aPcNac7GIvNlYq53QOfai2s1dmNiE1hGBvzJBmRqPKelDZ1UgItB5Z8bwFiQ6guF9Xm69zdcZ1ge6KirMsYrzD3RD4rWoQU1rEvsni7aoGNUOoqCRZWf8Xn15y7eDTH-W5Ouj-u=w2400",
+                            "img2": "",
+                            "img3": "",
+                            "img4": "",
+                            "img5": ""
+                        },
+                        {
+                            "id": 3,
+                            "created_at": "2019-08-13 05:22:47",
+                            "updated_at": "2019-08-13 05:22:47",
+                            "level": "medium",
+                            "location": "north",
+                            "name": "深澳岬角(象鼻岩景觀區)",
+                            "description": "此處是漁船進出花瓶嶼、彭加嶼、基隆嶼的港口。從油庫左側進入約 100 公尺，走到盡頭是一個岬角，水深約 25 Ｍ左右，海底落差大，常有大型迴游性魚類出現。",
+                            "county": "新北市瑞芳區",
+                            "avg_rating": 0,
+                            "longitude": "121.82443",
+                            "latitude": "25.13559",
+                            "img1": "https://lh3.googleusercontent.com/4aPcNac7GIvNlYq53QOfai2s1dmNiE1hGBvzJBmRqPKelDZ1UgItB5Z8bwFiQ6guF9Xm69zdcZ1ge6KirMsYrzD3RD4rWoQU1rEvsni7aoGNUOoqCRZWf8Xn15y7eDTH-W5Ouj-u=w2400",
+                            "img2": "",
+                            "img3": "",
+                            "img4": "",
+                            "img5": ""
+                        },
+                        {
+                            "id": 4,
+                            "created_at": "2019-08-13 05:22:47",
+                            "updated_at": "2019-08-13 05:22:47",
+                            "level": "medium",
+                            "location": "north",
+                            "name": "長潭",
+                            "description": "是個小漁港旁的初級潛場。好停車，路旁一停走 5 分鐘就到岸邊。此處地形都是小型礁岩場， 13 米 處見底都是沙子。地形簡單，冬天花枝很多。",
+                            "county": "基隆市中正區",
+                            "avg_rating": 0,
+                            "longitude": "121.80106",
+                            "latitude": "25.14048",
+                            "img1": "https://lh3.googleusercontent.com/4aPcNac7GIvNlYq53QOfai2s1dmNiE1hGBvzJBmRqPKelDZ1UgItB5Z8bwFiQ6guF9Xm69zdcZ1ge6KirMsYrzD3RD4rWoQU1rEvsni7aoGNUOoqCRZWf8Xn15y7eDTH-W5Ouj-u=w2400",
+                            "img2": "",
+                            "img3": "",
+                            "img4": "",
+                            "img5": ""
+                        },
+                        {
+                            "id": 5,
+                            "created_at": "2019-08-13 05:22:47",
+                            "updated_at": "2019-08-13 05:22:47",
+                            "level": "medium",
+                            "location": "north",
+                            "name": "蝙蝠洞",
+                            "description": "公園有樓梯與可下水的斜坡平台，延著右側的海岸線前進，就可找到潛點，水深約8 公尺，海底礁石有特殊的一線天地形，是少見的濱海美景，潛水者也可享受從中穿越的快感。",
+                            "county": "新北市瑞芳區",
+                            "avg_rating": 0,
+                            "longitude": "121.83211",
+                            "latitude": "25.12631",
+                            "img1": "https://lh3.googleusercontent.com/4aPcNac7GIvNlYq53QOfai2s1dmNiE1hGBvzJBmRqPKelDZ1UgItB5Z8bwFiQ6guF9Xm69zdcZ1ge6KirMsYrzD3RD4rWoQU1rEvsni7aoGNUOoqCRZWf8Xn15y7eDTH-W5Ouj-u=w2400",
+                            "img2": "",
+                            "img3": "",
+                            "img4": "",
+                            "img5": ""
+                        }
+                    ],
+                    "first_page_url": "http://monosparta-api.trunksys.com/api/spot/search?location=north&level=medium&page=1",
+                    "from": 1,
+                    "last_page": 1,
+                    "last_page_url": "http://monosparta-api.trunksys.com/api/spot/search?location=north&level=medium&page=1",
+                    "next_page_url": null,
+                    "path": "http://monosparta-api.trunksys.com/api/spot/search",
+                    "per_page": 15,
+                    "prev_page_url": null,
+                    "to": 4,
+                    "total": 4
+                },
+                "spotTotal": 4
+            }
+
+
+### Show Certain Spot Detial [GET /spot/{id}]
+
++ Parameters
+    + id:1 (INT, required) - Certain spot id.
+
++ Response 200 (application/json)
+
+            {
+                "item": [
+                    {
+                        "id": 1,
+                        "created_at": "2019-08-13 05:22:47",
+                        "updated_at": "2019-08-13 05:22:47",
+                        "level": "easy",
+                        "location": "north",
+                        "name": "野柳",
+                        "description": "野柳是個位於東北角的優質潛點，尤其適合夜潛。擁有獨特的大片海扇林、紅條、魟魚、軟絲仔、章魚、剝皮魚群 … 也能看到龍蝦、軟絲仔、章魚、紅尾冬、水母群。",
+                        "county": "新北市萬里區",
+                        "avg_rating": 0,
+                        "longitude": "121.68961",
+                        "latitude": "25.20475",
+                        "img1": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Yehliu.jpg/1024px-Yehliu.jpg",
+                        "img2": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Yehliu.jpg/1024px-Yehliu.jpg",
+                        "img3": "https://live.staticflickr.com/3212/2500855383_e780584ea1_b.jpg",
+                        "img4": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/1_yehliu_2015_panorama.jpg/1920px-1_yehliu_2015_panorama.jpg",
+                        "img5": "https://flic.kr/p/29FwbH1"
+                    }
+                ],
+                "comment": [
+                    {
+                        "id": 29,
+                        "created_at": "2019-08-19 09:21:03",
+                        "updated_at": "2019-08-19 09:21:03",
+                        "comment": "很棒的地方",
+                        "rating": 4,
+                        "user_id": null,
+                        "pivot": {
+                            "spot_id": 1,
+                            "comment_id": 29,
+                            "created_at": "2019-08-19 09:21:03",
+                            "updated_at": "2019-08-19 09:21:03"
+                        }
+                    },
+                    {
+                        "id": 27,
+                        "created_at": "2019-08-15 12:42:24",
+                        "updated_at": "2019-08-15 12:42:24",
+                        "comment": "So far",
+                        "rating": 4,
+                        "user_id": null,
+                        "pivot": {
+                            "spot_id": 1,
+                            "comment_id": 27,
+                            "created_at": "2019-08-15 12:42:24",
+                            "updated_at": "2019-08-15 12:42:24"
+                        }
+                    },
+                    {
+                        "id": 22,
+                        "created_at": "2019-08-14 09:51:51",
+                        "updated_at": "2019-08-14 09:51:51",
+                        "comment": "寒帶狗",
+                        "rating": 4,
+                        "user_id": null,
+                        "pivot": {
+                            "spot_id": 1,
+                            "comment_id": 22,
+                            "created_at": "2019-08-14 09:51:51",
+                            "updated_at": "2019-08-14 09:51:51"
+                        }
+                    }
+                ],
+                "Nearby": [
+                    {
+                        "id": 2,
+                        "name": "亞潮潛水",
+                        "county": "台北市中正區",
+                        "img1": "https://www.google.com/maps/uv?hl=zh-TW&pb=!1s0x3442a98ac9ca6e47%3A0x6ca5a0bf49e5c130!2m22!2m2!1i80!2i80!3m1!2i20!16m16!1b1!2m2!1m1!1e1!2m2!1m1!1e3!2m2!1m1!1e5!2m2!1m1!1e4!2m2!1m1!1e6!3m1!7e115!4shttps%3A%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipMkqDWecDHBRR3fSKHOe9d9W69yNt1grUiWYihY%3Dw293-h220-k-no!5z5Lqe5r2u5r2b5rC0IC0gR29vZ2xlIOaQnOWwiw!15sCAQ&imagekey=!1e10!2sAF1QipMkqDWecDHBRR3fSKHOe9d9W69yNt1grUiWYihY&sa=X&ved=2ahUKEwjD9_fyl_XjAhUBEqYKHTuWB6QQoiowDXoECAoQBg#"
+                    },
+                    {
+                        "id": 21,
+                        "name": "王子戶外休閒生活館",
+                        "county": "台北市大同區",
+                        "img1": "https://lh3.googleusercontent.com/4aPcNac7GIvNlYq53QOfai2s1dmNiE1hGBvzJBmRqPKelDZ1UgItB5Z8bwFiQ6guF9Xm69zdcZ1ge6KirMsYrzD3RD4rWoQU1rEvsni7aoGNUOoqCRZWf8Xn15y7eDTH-W5Ouj-u=w2400"
+                    },
+                    {
+                        "id": 1,
+                        "name": "藍波潛水",
+                        "county": "基隆市仁愛區",
+                        "img1": "https://scontent.frmq2-1.fna.fbcdn.net/v/t1.0-9/43952272_2084105808276546_2287697021496197120_o.jpg?_nc_cat=110&_nc_oc=AQlygj4tzOO8FS7jKr9M2112vVaYaqAjsSFhBotcIc5Lrh287KT2mU2Wg0hc1-Tb5Z0&_nc_ht=scontent.frmq2-1.fna&oh=843708a0e9443ba6491dca4242bc4135&oe=5DE93344"
+                    },
+                    {
+                        "id": 10,
+                        "name": "深態潛水訓練中心",
+                        "county": "台北市中正區",
+                        "img1": "https://scontent.frmq2-1.fna.fbcdn.net/v/t1.0-9/48368410_2097068957018120_2545178507005132800_n.jpg?_nc_cat=102&_nc_oc=AQluwRdvvCjJ5M1BTumFw2oWNkHUsMpTrwlDwPyti0a5g1krf-vIc3PmXiaID5bx0TE&_nc_ht=scontent.frmq2-1.fna&oh=32547109cbf4ec340d8a83375a889f53&oe=5DE12562"
+                    },
+                    {
+                        "id": 14,
+                        "name": "太平洋潛水中心",
+                        "county": "台北市南港區",
+                        "img1": "https://scontent.frmq2-2.fna.fbcdn.net/v/t1.0-0/p370x247/12108129_946488585404842_8151504132637748455_n.jpg?_nc_cat=103&_nc_oc=AQkh9dVSx23cWmAWxVl8Tb5Nn_I6E5YK7_aEAzCQ4aZkCRiqOpXFU-jOwz0WBBmZiwM&_nc_ht=scontent.frmq2-2.fna&oh=62324167a96aeb8a5548a0026d17f1ed&oe=5DDEF5C0"
+                    }
+                ],
+                "commentTotal": 3
+            }
+        
+### Show Spot Random List for home [GET /spot/random]
+
++ Response 200 (application/json)
+
+            {
+                "item": [
+                    {
+                        "id": 23,
+                        "created_at": "2019-08-13 05:22:47",
+                        "updated_at": "2019-08-13 05:22:47",
+                        "service": "ExploreDiving,LicenseCourse,EquipmentSale",
+                        "location": "north",
+                        "name": "水啦龍洞潛水中心",
+                        "description":"貢寮龍洞－水啦海洋休閒俱樂部\nPADI 5星級教練發展中心，給你最安全最有趣的海洋休閒活動。",
+                        "bh": "星期一　09:00-17:00\n星期二　09:00-17:00\n星期三　09:00-17:00\n星期四　09:00-17:00\n星期五　09:00-17:00\n星期六　09:00-17:00\n星期日　09:00-17:00",
+                        "county": "新北市貢寮區",
+                        "address": "龍洞街63之4號",
+                        "tel": "02 2490 9088",
+                        "mobile": "",
+                        "url": "http://www.suiila.com/",
+                        "fb": "https://www.facebook.com/Suiila/",
+                        "avg_rating": 0,
+                        "longitude": "121.916877",
+                        "latitude": "25.118045",
+                        "img1": "https://scontent.frmq2-2.fna.fbcdn.net/v/t1.0-9/13307479_1375591102467423_8549706639219660445_n.jpg?_nc_cat=104&_nc_oc=AQkBI0FO7bI-uZ_LztiIEtNq_UUezQl7nFKSB97bNfTLSXgjddb4QNpLVwKiqJQOoa0&_nc_ht=scontent.frmq2-2.fna&oh=e10f637923ea26bdfa3dc4a8223bfaac&oe=5DD65EBA",
+                        "img2": "https://scontent.frmq2-1.fna.fbcdn.net/v/t1.0-9/43108024_1002571753278503_4002998958270971904_n.jpg?_nc_cat=111&_nc_oc=AQmHePEn8ogqmk1CIm9UMs77E6g9ImQkDOnZQfCjAqz2iWx4Up4s_oswdpNzOWBHzFo&_nc_ht=scontent.frmq2-1.fna&oh=11848ec304becb3fccb328cc7deb16d1&oe=5DD0ABA7",
+                        "img3": "",
+                        "img4": "",
+                        "img5": ""
+                    }
+                ]
+            }
+
+## Shop Search [/shop]
+
+### Show Shop Search List [GET /shop]
+
++ Response 200 (application/json)
+
+            {
+                "item": {
+                    "current_page": 1,
+                    "data": [
+                        {
+                            "id": 99,
+                            "name": "東河潛水",
+                            "county": "台東縣東河鄉",
+                            "img1": "https://scontent.frmq2-2.fna.fbcdn.net/v/t1.0-9/14344906_1771661733093124_298035107215538834_n.jpg?_nc_cat=107&_nc_oc=AQkd0JsBvihZXlRnsFmCTZQ8cZAN58Xb-Dsin0WymCQKI-4jJSMUrN0UyQtIsttt1i0&_nc_ht=scontent.frmq2-2.fna&oh=4b9128af02c7480a9d82c9cdb3843bad&oe=5DAA0819"
+                        },
+                        {
+                            "id": 98,
+                            "name": "藍海潛水用品社",
+                            "county": "台東縣復興里",
+                            "img1": "https://lh3.googleusercontent.com/4aPcNac7GIvNlYq53QOfai2s1dmNiE1hGBvzJBmRqPKelDZ1UgItB5Z8bwFiQ6guF9Xm69zdcZ1ge6KirMsYrzD3RD4rWoQU1rEvsni7aoGNUOoqCRZWf8Xn15y7eDTH-W5Ouj-u=w2400"
+                        },
+                        {
+                            "id": 97,
+                            "name": "狂人出動",
+                            "county": "花蓮縣吉安鄉",
+                            "img1": "https://www.outdoormaniac.com.tw/data/wrapper/logo.png"
+                        },
+                        {
+                            "id": 96,
+                            "name": "好野人",
+                            "county": "花蓮縣花蓮市",
+                            "img1": "https://scontent.frmq2-2.fna.fbcdn.net/v/t1.0-9/58851_431087136966402_1832612541_n.jpg?_nc_cat=103&_nc_oc=AQkUq3nrpgdubcU6VNgrY6mg0Trtb7a3DkwyzvSJTxOdzYHCPGiQe42qRKf6s35BgUM&_nc_ht=scontent.frmq2-2.fna&oh=1b7b407a9fc4d7514fce6ad9797ac6fc&oe=5DD8E8CC"
+                        },
+                        {
+                            "id": 95,
+                            "name": "自然休閒",
+                            "county": "花蓮縣花蓮市",
+                            "img1": "https://scontent.frmq2-1.fna.fbcdn.net/v/t1.0-9/58019502_1522868717843356_798334274573959168_n.jpg?_nc_cat=111&_nc_oc=AQm6zcKbNaGemWz6ZnGKcv9-ahCXTjYMehV33WfcAEqroQZBYv0U2ql94uJBBe15JYU&_nc_ht=scontent.frmq2-1.fna&oh=9041fe91225797658f704379ec48a3ad&oe=5DA17DD1"
+                        },
+                        {
+                            "id": 94,
+                            "name": "和平潛水",
+                            "county": "花蓮縣花蓮市",
+                            "img1": "http://peace.pgo.tw/ktpic/info/150430000120150430200535.jpg"
+                        },
+                        {
+                            "id": 93,
+                            "name": "喬米潛水體驗潛水",
+                            "county": "澎湖縣湖西鄉",
+                            "img1": "https://scontent.frmq2-1.fna.fbcdn.net/v/t1.0-9/53364316_2366967946950093_8420292072526839808_o.jpg?_nc_cat=106&_nc_oc=AQl_Hlde1CcY4AfasIUvAlm0sh-eV1SYcYxqgUfhtkIJn_i_B9ZDOqhYJ4UzEtmLL-k&_nc_ht=scontent.frmq2-1.fna&oh=595d5b61a0c1ce9473f22381498bf794&oe=5DD9F484"
+                        },
+                        {
+                            "id": 92,
+                            "name": "島澳七七潛水",
+                            "county": "澎湖縣望安鄉",
+                            "img1": "https://scontent.frmq2-2.fna.fbcdn.net/v/t1.0-9/1003336_639442836075346_1124586841_n.jpg?_nc_cat=103&_nc_oc=AQmhhsLz22leGUke1oMBVFwpcx1mguloWmgDaRuaZixQHVLo-r-H13sjiehwFiT5zq0&_nc_ht=scontent.frmq2-2.fna&oh=c5ee01277cb5a37bb0f542a71f6de338&oe=5DE501A3"
+                        },
+                        {
+                            "id": 91,
+                            "name": "海洋途徑潛水",
+                            "county": "澎湖縣馬公市",
+                            "img1": "https://scontent.frmq2-2.fna.fbcdn.net/v/t1.0-9/58379315_2267350820146037_1064990570436362240_o.jpg?_nc_cat=104&_nc_oc=AQnOvYaXX3NFdHV29GY6mwpK1BkMbOtZbhCP3dgG4g8HDKaBauju7DxE0LkQ7-utoyg&_nc_ht=scontent.frmq2-2.fna&oh=665082c7054afdef05e27511e71511f3&oe=5DE54F6D"
+                        },
+                        {
+                            "id": 90,
+                            "name": "PADI澎湖興仁潛水訓練中心",
+                            "county": "澎湖縣馬公市",
+                            "img1": "https://scontent.frmq2-2.fna.fbcdn.net/v/t1.0-9/56847935_2415144271843391_5262648733736108032_n.jpg?_nc_cat=107&_nc_oc=AQktiU3aWY7HfrLR963DF9uqTaDDmEFb5mNhr3sx7v2W0VAB31Tq35UWLTNCjQ7Ta6w&_nc_ht=scontent.frmq2-2.fna&oh=e39239cea29bb62533fc9b563a311398&oe=5DD2B854"
+                        },
+                        {
+                            "id": 89,
+                            "name": "日日潛水",
+                            "county": "澎湖縣馬公市",
+                            "img1": "https://scontent.frmq2-1.fna.fbcdn.net/v/t1.0-9/64650625_612127232526278_6981384612828151808_n.jpg?_nc_cat=110&_nc_oc=AQksLpOOhy4miWWLeJEAVlwPq3K7L8u5H34fXT7Fe9YCpueiBZylNn1IkyIIq8vDgSE&_nc_ht=scontent.frmq2-1.fna&oh=745ec641e3a6f0cddffb24f1c97e11d6&oe=5DD7EC4E"
+                        },
+                        {
+                            "id": 88,
+                            "name": "綠島9號水世界潛水中心",
+                            "county": "台東縣綠島鄉",
+                            "img1": "https://scontent.frmq2-1.fna.fbcdn.net/v/t1.0-9/58576545_2325137454400173_1159501265655300096_o.jpg?_nc_cat=106&_nc_oc=AQlXMmA7YIBP1tvDKaaOhCkY-IejEQhiV1-HDQlSHrVmqopglWDn5cwXIL2lI2i8eoo&_nc_ht=scontent.frmq2-1.fna&oh=9baf94d775d2f7cc3e19beb7adb2fc0d&oe=5DA0E7B9"
+                        },
+                        {
+                            "id": 87,
+                            "name": "火燒島潛水度假中心",
+                            "county": "台東縣綠島鄉",
+                            "img1": "https://scontent.frmq2-2.fna.fbcdn.net/v/t1.0-9/33446967_1688979354549984_7249330485506080768_n.jpg?_nc_cat=100&_nc_oc=AQm1AuPtrvw1MR5eMkp0RcuHaCanNZIHy4ZSzN8i6lDsV8SjmYqf-HEN-0WebxiWjxY&_nc_ht=scontent.frmq2-2.fna&oh=bce05709a35ba0ae94c8f15c4aa296df&oe=5DE97BD0"
+                        },
+                        {
+                            "id": 86,
+                            "name": "綠島居福潛水",
+                            "county": "台東縣綠島鄉",
+                            "img1": "https://scontent.frmq2-2.fna.fbcdn.net/v/t31.0-8/15443148_591711564357626_6532349469491717799_o.jpg?_nc_cat=100&_nc_oc=AQmr3ZnuU_WoDfX6g6ivcFqUXt93TWaO6nGviWQAZQQaXAJrBzN-LZCP61CDAuxwAWk&_nc_ht=scontent.frmq2-2.fna&oh=5d74e22c1d5a6641f3f5d3f040987b25&oe=5DA36867"
+                        },
+                        {
+                            "id": 85,
+                            "name": "綠島庫達潛水社",
+                            "county": "台東縣綠島鄉",
+                            "img1": "https://scontent.frmq2-1.fna.fbcdn.net/v/t1.0-9/56490400_2193807240706905_2661169188369858560_o.jpg?_nc_cat=110&_nc_oc=AQkqO4hK78A9i5e1wu6awUzCYXEhON5LIBVYFSvhK8xXLXCzs87jCw0xIGRFukP7oWM&_nc_ht=scontent.frmq2-1.fna&oh=97e7c5afe7d84ec6000f7f9a8f15dbcf&oe=5DA8A48E"
+                        }
+                    ],
+                    "first_page_url": "http://monosparta-api.trunksys.com/api/shop?page=1",
+                    "from": 1,
+                    "last_page": 7,
+                    "last_page_url": "http://monosparta-api.trunksys.com/api/shop?page=7",
+                    "next_page_url": "http://monosparta-api.trunksys.com/api/shop?page=2",
+                    "path": "http://monosparta-api.trunksys.com/api/shop",
+                    "per_page": 15,
+                    "prev_page_url": null,
+                    "to": 15,
+                    "total": 99
+                },
+                "shopTotal": 15
+            }
+
+### Show Shop Search with Location and Level [GET /shop/search{?location,service}]
+
++ Parameters
+    + location: north (Char, optional) - 地區
+        + All available parameters  
+          | location  | value  |
+          | :-----:   | :-----: |
+          | 北部      | north  |
+          | 中部      | mid    |
+          | 南部      | south  |
+          | 東部      | east   |
+          | 外島      | outer  | 
+
+    + service: Food (Char, optional) - 服務
+        + All available parameters
+          | Location | Value  |
+          | :-----:  | :-----: |
+          | 潛水體驗 | ExploreDiving  |
+          | 證照課程 | LicenseCourse  |
+          | 器材銷售 | EquipmentSale  |
+          | 飲食     | Food           |
+          | 住宿     | Accommodation  |        
+
++ Response 200 (application/json)
+
+            {
+                "item": {
+                    "current_page": 1,
+                    "data": [
+                        {
+                            "id": 13,
+                            "created_at": "2019-08-13 05:22:47",
+                            "updated_at": "2019-08-13 05:22:47",
+                            "service": "ExploreDiving,LicenseCourse,EquipmentSale,Food",
+                            "location": "north",
+                            "name": "鬥陣潛水教學休閒俱樂部",
+                            "description": "藉由專業、安全、健康、正確的管道學習潛水，讓所有人能看見美麗的藍色星球在水下精彩的樣貌，也推動讓更多環境保護的種子發芽，讓大家關注愛海愛地球，共同維護海洋風景。",
+                            "bh": "星期一　12:00-20:00\n星期二　10:00-22:00\n星期三　10:00-22:00\n星期四　10:00-22:00\n星期五　10:00-22:00\n星期六　10:00-22:00\n星期日　12:00-20:00",
+                            "county": "台北市南港區",
+                            "address": "台北市南港區玉成街40號",
+                            "tel": "02 2782 1855",
+                            "mobile": "",
+                            "url": "https://l.facebook.com/l.php?u=http%3A%2F%2Fwww.joindiving.com.tw%2F%3Ffbclid%3DIwAR0waTzNcNtPeVNkjN2xMI-cH2twGzDuN73YwLg9k2bG0yGJbiHqCi0cCws&h=AT1_7WuJn04gsiPw1Gb_MRkkY8n0nBxb1SF-JLWXqlQ4Gm5V8sqYeU3EQBdKcxYhrJ-v0PBAD4Y0VZixLLOSMPU3e_MZy6xuUnFTctygTyKi51q5BWeKpVkWWgl72hcZF3vZBDy5ebqoEutus_YJPXVbHq2cV-yPT3encj8Mmo6iKVkRA5OeZ5bAfr7rj8z6OSqHX7xIl_HQaAPaI45ZtrnclFrnlgBeRLIADAFlniQvHY3qfMiZ5kwNaWeDAMB0ww3UEMrDaZpBKH1jJ9C-KV9_73HsxBwWrnnJeA_6vyXH_EES5VirzpBFlnpPvDV77xAj9YAnhE9R_wacBo3lKP-FwqLeB89Erj_4TqHACYNlhefmOFulyqmlr__JO3lllkQpMyUTF2NGd-dXb6VeLtur1EcjzoW0IOCjc9qyPyocEaHxu4ADjZV0F5EfBUvlG339Sg9id0Rmj5j2GYvCPV9GgA7Q_lke2_9Ebbg",
+                            "fb": "https://www.facebook.com/tdiving/",
+                            "avg_rating": 0,
+                            "longitude": "121.58144",
+                            "latitude": "25.04874",
+                            "img1": "https://scontent.frmq2-1.fna.fbcdn.net/v/t1.0-9/62509362_1103097576545518_4518439783055228928_n.jpg?_nc_cat=108&_nc_oc=AQnC3VtCOV2Bp5cw3j-w9Algjip1PkNggSWorhHvRZRecU0Qga9g64rT83q9Sl6zbqo&_nc_ht=scontent.frmq2-1.fna&oh=9bd7d27ccc308c6f27049081c58e971c&oe=5DD2EBB4",
+                            "img2": "https://scontent.frmq2-1.fna.fbcdn.net/v/t1.0-9/61199611_1089554284566514_6970338888950743040_o.jpg?_nc_cat=111&_nc_oc=AQl1Jp44Be7SdFKxsWBbJa7CHyL8BpOaS3HTttFYlMrAwllPOVUD2bTWFseEEdRNqWg&_nc_ht=scontent.frmq2-1.fna&oh=c1277edf55fb02dd073446907475769b&oe=5DCC5AC0",
+                            "img3": "",
+                            "img4": "https://scontent.frmq2-1.fna.fbcdn.net/v/t1.0-9/61311787_1089554027899873_6482412032686555136_o.jpg?_nc_cat=111&_nc_oc=AQnGKSSVpLy02LsTTIqCHfHV6j4cqkgshmcHvy3nHmwEPmnxkpNwgO3S_g7LR3UxD2s&_nc_ht=scontent.frmq2-1.fna&oh=e0cf2587e21289d91892320baaf427db&oe=5DEB443B",
+                            "img5": "https://scontent.frmq2-2.fna.fbcdn.net/v/t1.0-9/59401772_1074588389396437_2296798937664716800_n.jpg?_nc_cat=107&_nc_oc=AQmArhXTVpoiSuhm0WayRZ-QxIOtIawxtyH-OlMvOibiYPAkNvH5EGCJt_9Chlm3dcw&_nc_ht=scontent.frmq2-2.fna&oh=9d482fe755fbb108751001c536d7742a&oe=5DE3C964\r"
+                        },
+                        {
+                            "id": 14,
+                            "created_at": "2019-08-13 05:22:47",
+                            "updated_at": "2019-08-13 05:22:47",
+                            "service": "ExploreDiving,LicenseCourse,EquipmentSale,Food,Accommodation",
+                            "location": "north",
+                            "name": "太平洋潛水中心",
+                            "description": "於1989年成立，致力於休閒潛水推廣，因材施教，多年來維持優良的教學品質，視潛水安全為第一優先。採用SSI全方位教學系統，結構完整，適合潛水員多元發展。",
+                            "bh": "星期一　15:00-19:00\n星期二　11:00-19:00\n星期三　11:00-19:00\n星期四　11:00-19:00\n星期五　11:00-19:00\n星期六　休息\n星期日　休息",
+                            "county": "台北市南港區",
+                            "address": "南港路三段80巷65號",
+                            "tel": "02 2788 4421",
+                            "mobile": "",
+                            "url": "http://www.twpdc.com/?fbclid=IwAR1AYRHPqxpIEwhVRlW7WoMdIh5QkG9uogxQkJc1C67NfHPYzd5cqRMtZeM",
+                            "fb": "https://www.facebook.com/pdctw/",
+                            "avg_rating": 0,
+                            "longitude": "121.58981",
+                            "latitude": "25.05549",
+                            "img1": "https://scontent.frmq2-2.fna.fbcdn.net/v/t1.0-0/p370x247/12108129_946488585404842_8151504132637748455_n.jpg?_nc_cat=103&_nc_oc=AQkh9dVSx23cWmAWxVl8Tb5Nn_I6E5YK7_aEAzCQ4aZkCRiqOpXFU-jOwz0WBBmZiwM&_nc_ht=scontent.frmq2-2.fna&oh=62324167a96aeb8a5548a0026d17f1ed&oe=5DDEF5C0",
+                            "img2": "https://scontent.frmq2-2.fna.fbcdn.net/v/t1.0-9/67104393_2431185856935100_1449838417754980352_n.jpg?_nc_cat=107&_nc_oc=AQm8xFwybG7yNJsepp2Mzi4fTGEsehPQAXjsfOS1yfElf7tCYrzEBYf5nMQgoY15Emk&_nc_ht=scontent.frmq2-2.fna&oh=3d1727fbbcbd8a348835175287114201&oe=5DDCBD30",
+                            "img3": "https://scontent.frmq2-1.fna.fbcdn.net/v/t1.0-9/67356966_2423165497737136_5468344638916001792_n.jpg?_nc_cat=111&_nc_oc=AQlcQH8NQFShOyEW-Sd34y6ZQbsfV7eEcJP0IGAND_xyyootZi9TyjssFGNPiOx9xuY&_nc_ht=scontent.frmq2-1.fna&oh=b6eed6032af339861ac5eb3a8210e937&oe=5DD42B2A",
+                            "img4": "https://scontent.frmq2-1.fna.fbcdn.net/v/t1.0-9/66677906_2418109738242712_6593043260585803776_n.jpg?_nc_cat=111&_nc_oc=AQk8XvXJiJByFRX3zhqTCfOokQMIQrc9D1ESg9JzaEbRLN4Xv6I1f2OzZ67p8ZN14Sc&_nc_ht=scontent.frmq2-1.fna&oh=5b6c44198b5e4519df26c7d9f22771e0&oe=5DE22495",
+                            "img5": "https://scontent.frmq2-1.fna.fbcdn.net/v/t1.0-9/66862057_2427293203991032_252231154277548032_n.jpg?_nc_cat=108&_nc_oc=AQmOcJpYW7tcOUh7Vs4LvzKiUVHkylw_CmBI33JsT3xYWreMQ1Q76m55BbiPp7yV640&_nc_ht=scontent.frmq2-1.fna&oh=e775bbbe1784c65d4557a7a25ed6ccae&oe=5DE052FB\r"
+                        },
+                        {
+                            "id": 15,
+                            "created_at": "2019-08-13 05:22:47",
+                            "updated_at": "2019-08-13 05:22:47",
+                            "service": "ExploreDiving,LicenseCourse,EquipmentSale,Food,Accommodation",
+                            "location": "north",
+                            "name": "NEREUS",
+                            "description": "NEREUS 源自希臘神中的海神，作為我們潛水集團的代表品牌，我們不僅僅提供潛水的專業訓練、完整多樣的潛水相關商品以及完整合法有保障的潛水旅遊，更致力於海洋教育及保育活動，讓越來越多的人可以認識海洋喜歡大海學會潛水！",
+                            "bh": "星期一　13:30-21:00\n星期二　13:30-21:00\n星期三　13:30-21:00\n星期四　13:30-21:00\n星期五　13:30-21:00\n星期六　13:30-21:00\n星期日　13:30-21:00",
+                            "county": "台北市南港區",
+                            "address": "八德路四段768巷1弄20號",
+                            "tel": "02 2653 3885",
+                            "mobile": "",
+                            "url": "http://www.divehouse.com.tw/",
+                            "fb": "https://www.facebook.com/divehousetw",
+                            "avg_rating": 0,
+                            "longitude": "121.581419",
+                            "latitude": "25.050379",
+                            "img1": "https://scontent.frmq2-2.fna.fbcdn.net/v/t1.0-9/10354097_637975506299246_6321451349483612663_n.jpg?_nc_cat=101&_nc_oc=AQkKcgVyJR-DDv1FvLiRILtpdVHFavLVKeD-q0xffwjhnGj-W9SiPucWvRhomqbKlu8&_nc_ht=scontent.frmq2-2.fna&oh=404a26e5cb7657931f0bc3ea6f3f55a6&oe=5DDCBC0A",
+                            "img2": "https://scontent.frmq2-2.fna.fbcdn.net/v/t1.0-9/67678200_2362445610518885_2058516299566284800_n.jpg?_nc_cat=107&_nc_oc=AQnSB1M4xLyKemABvYV0_U-DvI2siQl9VvMvPWsiPnmZdc1iUGuWSxY8h-WRVBEc8Pc&_nc_ht=scontent.frmq2-2.fna&oh=9f90bd1096771d4748632a2352598492&oe=5DDF4DCE",
+                            "img3": "https://scontent.frmq2-2.fna.fbcdn.net/v/t1.0-9/67354815_2341632172600229_3480728289377517568_n.jpg?_nc_cat=109&_nc_oc=AQmZek5dzZPenZsJoD4mOJxYMwLTxsJ08k1RC1TyJkiqtJJRW1fFP_e0DapM7I9sDcc&_nc_ht=scontent.frmq2-2.fna&oh=ebd7db6522a03daf8e0a05b684cfa16f&oe=5DD29494",
+                            "img4": "https://scontent.frmq2-1.fna.fbcdn.net/v/t1.0-9/54278735_2136314906465291_3575786653056237568_n.jpg?_nc_cat=108&_nc_oc=AQlLWcAuVQpvDtvsZV3YzSvnsgu0bLo8lPspmf8zeSTZ5cvI7PPNDg-S_6_NAzTskmY&_nc_ht=scontent.frmq2-1.fna&oh=7a64b6492b2f943fb37ebcb84d337f79&oe=5DC7B6C8",
+                            "img5": "https://scontent.frmq2-2.fna.fbcdn.net/v/t1.0-9/51523114_2086197308143718_5891399420083175424_n.jpg?_nc_cat=103&_nc_oc=AQmQeLGG1mDeByfDCNtNh00PaOZvjRC10E7vfYnwlPEArd2szr3vK2g8R3yHnGtP6tc&_nc_ht=scontent.frmq2-2.fna&oh=e6a6fe1523a45abdd8068e66fc19c0cd&oe=5DDA1933\r"
+                        },
+                        {
+                            "id": 17,
+                            "created_at": "2019-08-13 05:22:47",
+                            "updated_at": "2019-08-13 05:22:47",
+                            "service": "ExploreDiving,LicenseCourse,EquipmentSale,Food,Accommodation",
+                            "location": "north",
+                            "name": "悠潛潛水",
+                            "description": "潛水訓練、旅遊、裝備歡迎洽詢～",
+                            "bh": "星期一　14:00-21:30\n星期二　14:00-21:30\n星期三　14:00-21:30\n星期四　14:00-21:30\n星期五　14:00-21:30\n星期六　18:00-21:30\n星期日　18:00-21:30",
+                            "county": "新北市新莊區",
+                            "address": "頭前路60號之三",
+                            "tel": "02 2277 7076",
+                            "mobile": "",
+                            "url": "https://www.u-diving.com.tw/",
+                            "fb": "https://www.facebook.com/udiving2017.com.tw/",
+                            "avg_rating": 0,
+                            "longitude": "121.466760",
+                            "latitude": "25.052595",
+                            "img1": "https://scontent.frmq2-1.fna.fbcdn.net/v/t1.0-9/154505_806825192715111_3362985258807339438_n.jpg?_nc_cat=106&_nc_oc=AQnY2a91AI2ELAWe8SIX3Vpx1fq8sRkY_LAli1LDUJ4XTHGpXdNIa0F6b4n0ElOjBTA&_nc_ht=scontent.frmq2-1.fna&oh=c6b985ad0b8faa648d3b2d2abf5d0d15&oe=5DDE90A9",
+                            "img2": "https://scontent.frmq2-1.fna.fbcdn.net/v/t1.0-9/64459486_2474492632615017_6021025347007414272_n.jpg?_nc_cat=106&_nc_oc=AQl6q4ZxiiUI0_Uvn-Yba0ynflBIzEwFNMMGngCv-9_CGPSmx2q7JpAkIp5H94h-l_g&_nc_ht=scontent.frmq2-1.fna&oh=535baccc2da73c1611ea533c7e9aea27&oe=5DEB8234",
+                            "img3": "https://scontent.frmq2-1.fna.fbcdn.net/v/t1.0-9/54731136_2312431155487833_9090089112781717504_n.jpg?_nc_cat=106&_nc_oc=AQn9CTpB7qQ23cLAKaxXhR1MGOk1U6eIa3176S3NSnHqNAsKjyvCk7N10GQaBuC2t9c&_nc_ht=scontent.frmq2-1.fna&oh=7156eba289e07cabb39b7addbcf8b07a&oe=5DE8DEBD",
+                            "img4": "https://scontent.frmq2-1.fna.fbcdn.net/v/t1.0-9/39027526_1999541750110110_7752928084000505856_n.jpg?_nc_cat=106&_nc_oc=AQlqjH5g4qL0wRWuwATM2B3IHZAeUAUCQWgvU-9XY3Olyr5pYoVisCrnbrlZynyaOJM&_nc_ht=scontent.frmq2-1.fna&oh=eac9653ea9257b6f4102e7a6ec7d5738&oe=5DC9245D",
+                            "img5": "\r"
+                        }
+                    ],
+                    "first_page_url": "http://monosparta-api.trunksys.com/api/shop/search?location=north&service=Food&page=1",
+                    "from": 1,
+                    "last_page": 1,
+                    "last_page_url": "http://monosparta-api.trunksys.com/api/shop/search?location=north&service=Food&page=1",
+                    "next_page_url": null,
+                    "path": "http://monosparta-api.trunksys.com/api/shop/search",
+                    "per_page": 15,
+                    "prev_page_url": null,
+                    "to": 4,
+                    "total": 4
+                },
+                "shopTotal": 4
+            }
+
+### Show Certain Shop Detial [GET /shop/{id}]
+
++ Parameters
+    + id:1 (INT, required) - Certain shop id.
+
++ Response 200 (application/json)
+
+            {
+                "item": [
+                    {
+                        "id": 1,
+                        "created_at": "2019-08-13 05:22:47",
+                        "updated_at": "2019-08-13 05:22:47",
+                        "service": "ExploreDiving,LicenseCourse,EquipmentSale",
+                        "location": "north",
+                        "name": "藍波潛水",
+                        "description": "専業潛水船(藍波八號) 、專營體驗潛水,潛水教學,器材維修,水底工程,攝影、水肺充氣,器材販售，歡迎來店參觀選購。",
+                        "bh": "星期一　09:00-21:00\n星期二　08:00-22:00\n星期三　08:00-22:00\n星期四　09:00-21:00\n星期五　09:00-21:00\n星期六　09:00-21:00\n星期日　09:00-21:00",
+                        "county": "基隆市仁愛區",
+                        "address": "基隆市中山區文化路100號",
+                        "tel": "02 2423 0895",
+                        "mobile": "",
+                        "url": "http://rambo.idv.tw/twe/",
+                        "fb": "https://www.facebook.com/RAMBODIVE/",
+                        "avg_rating": 0,
+                        "longitude": "121.73455",
+                        "latitude": "25.15357",
+                        "img1": "https://scontent.frmq2-1.fna.fbcdn.net/v/t1.0-9/43952272_2084105808276546_2287697021496197120_o.jpg?_nc_cat=110&_nc_oc=AQlygj4tzOO8FS7jKr9M2112vVaYaqAjsSFhBotcIc5Lrh287KT2mU2Wg0hc1-Tb5Z0&_nc_ht=scontent.frmq2-1.fna&oh=843708a0e9443ba6491dca4242bc4135&oe=5DE93344",
+                        "img2": "https://scontent.frmq2-2.fna.fbcdn.net/v/t1.0-9/67775890_2542699702417152_871631993173966848_o.jpg?_nc_cat=104&_nc_oc=AQmFL62wlwDgrUDBI2owvS8Sm80vUEy3yX9aL8NAxj8lsEGiCmYTlzfig8op8igvtyk&_nc_ht=scontent.frmq2-2.fna&oh=1a5b6c9c68f2ea687172be13b4dad28f&oe=5DA0851F",
+                        "img3": "https://scontent.frmq2-1.fna.fbcdn.net/v/t1.0-9/67538038_2542693449084444_6699465961700851712_o.jpg?_nc_cat=105&_nc_oc=AQmgDUKZ01_KeFINNnk86wwxZoWXCmE6ZHy32hSow7OzWKzDoNp4ieuV1OhoM9EN0Ks&_nc_ht=scontent.frmq2-1.fna&oh=c6644960ab827322220997c29f405d20&oe=5DD41B86",
+                        "img4": "https://scontent.frmq2-2.fna.fbcdn.net/v/t1.0-9/67171867_1632388593560806_369863024250454016_o.jpg?_nc_cat=107&_nc_oc=AQlxcj5x8Orxcx-H84AKDEcvuKwXYrUA2_oaL-zVnyx5-YgvHLZtT6MqcGtE3XSRY8M&_nc_ht=scontent.frmq2-2.fna&oh=26cc3ed61cea73226da2275802a75ebf&oe=5DDBC02C",
+                        "img5": "https://scontent.frmq2-1.fna.fbcdn.net/v/t1.0-9/67233223_1632388503560815_2310986107996602368_o.jpg?_nc_cat=102&_nc_oc=AQnMVWjk1heckomkgADDtZp8fHo1oUXrUcw5sdliVMwCzQUZ0GOSW8FSHGrUGViENW0&_nc_ht=scontent.frmq2-1.fna&oh=a92a077551197ebe59466f2c80fa5632&oe=5DE0034B\r"
+                    }
+                ],
+                "comment": [
+                    {
+                        "id": 37,
+                        "created_at": "2019-08-23 03:26:02",
+                        "updated_at": "2019-08-23 03:26:02",
+                        "comment": "服務不錯",
+                        "rating": 4,
+                        "user_id": null,
+                        "pivot": {
+                            "shop_id": 1,
+                            "comment_id": 37,
+                            "created_at": "2019-08-23 03:26:02",
+                            "updated_at": "2019-08-23 03:26:02"
+                        }
+                    }
+                ],
+                "commentTotal": 1
+            }
+            
+### Show Shop Random List for home [GET /shop/random]
+
++ Response 200 (application/json)
+
+            {
+                "item": [
+                    {
+                        "id": 82,
+                        "created_at": "2019-08-13 05:22:47",
+                        "updated_at": "2019-08-13 05:22:47",
+                        "service": "ExploreDiving,Accommodation",
+                        "location": "outer",
+                        "name": "藍洋潛水訓練中心",
+                        "description": "尚無資料",
+                        "bh": "星期一　08:00-21:00\n星期二　08:00-21:00\n星期三　08:00-21:00\n星期四　08:00-21:00\n星期五　08:00-21:00\n星期六　07:30-21:00\n星期日　07:30-21:00",
+                        "county": "台東縣蘭嶼鄉",
+                        "address": "椰油295之2號",
+                        "tel": "08 973 2155",
+                        "mobile": "",
+                        "url": "http://www.blueocean-lanyu.tw/",
+                        "fb": "https://www.facebook.com/blueocean.lanyu/?__tn__=kC-R&eid=ARBgh43MsW3kCxq9qD7axR6xHP9P7mxfTfRDGDkNy9KYdriKM0LtHfxofN6OVuZ54UI-mzupt6g16tj-&hc_ref=ARScFtghdEH-nrwpvF9hL0UAIAZGcH56ILeukfMslXl_YSE4dQbpHa-ld-44r_n55k8&fref=tag",
+                        "avg_rating": 0,
+                        "longitude": "121.50957",
+                        "latitude": "22.05835",
+                        "img1": "https://scontent.frmq2-1.fna.fbcdn.net/v/t1.0-9/66206533_440932699793719_9183686766673002496_n.jpg?_nc_cat=108&_nc_oc=AQlBPbt7kVWJW6KTwYTdqT5ovLPx5e6d9z2uEwOuEvjZh9ZeytdIvBleeQHAbncY6h0&_nc_ht=scontent.frmq2-1.fna&oh=b1fa81724b2857b949ff724b13878cdb&oe=5DDDD0CC",
+                        "img2": "https://scontent.frmq2-1.fna.fbcdn.net/v/t1.0-9/64240551_429141894306133_1679789536558710784_n.jpg?_nc_cat=105&_nc_oc=AQlJTyhgJHJ7TSR9wlhAG98Eeb-DuEmNUprzdxtHNzUl08Jp3_-TxEplzNFBHUjlDsA&_nc_ht=scontent.frmq2-1.fna&oh=1b7e63199f884bafa5c88d8025089d7f&oe=5DA6D6EA",
+                        "img3": "https://scontent.frmq2-1.fna.fbcdn.net/v/t1.0-9/61850720_423667524853570_7665208496580722688_n.jpg?_nc_cat=108&_nc_oc=AQnzEnYhUMhtmVoev4Z1UchRba3P41bWL89KkSohaar5ktp-d4Dzlnht4qCssem4pAc&_nc_ht=scontent.frmq2-1.fna&oh=fda45fc114d5782bb4ebd583763f4481&oe=5DEB70BC",
+                        "img4": "",
+                        "img5": ""
+                    },
+                    {
+                        "id": 61,
+                        "created_at": "2019-08-13 05:22:47",
+                        "updated_at": "2019-08-13 05:22:47",
+                        "service": "ExploreDiving,LicenseCourse,Accommodation",
+                        "location": "south",
+                        "name": "台灣潛水",
+                        "description": "「將海洋帶入你的生活」（Bring Ocean Into Your Life）是台灣潛水的核心理念。\n試著解決大多數人對於海洋的陌生並縮短海與人的距離。藉由潛水，提供正確的海洋知識，讓海洋進入你的生活。",
+                        "bh": "星期一　08:00-18:00\n星期二　08:00-18:00\n星期三　08:00-18:00\n星期四　08:00-18:00\n星期五　08:00-18:00\n星期六　08:00-18:00\n星期日　08:00-18:00",
+                        "county": "屏東縣恆春鎮",
+                        "address": "大光路118-5",
+                        "tel": "08 886 7082",
+                        "mobile": "",
+                        "url": "https://www.taiwan-diving.com/",
+                        "fb": "",
+                        "avg_rating": 0,
+                        "longitude": "120.74012",
+                        "latitude": "21.94614",
+                        "img1": "https://lh5.googleusercontent.com/p/AF1QipNXmi0mH1mAOX58nwjiE5qBQMFr-7oz059yRvWC=w408-h251-k-no",
+                        "img2": "",
+                        "img3": "",
+                        "img4": "",
+                        "img5": ""
+                    },
+                    {
+                        "id": 84,
+                        "created_at": "2019-08-13 05:22:47",
+                        "updated_at": "2019-08-13 05:22:47",
+                        "service": "ExploreDiving,LicenseCourse",
+                        "location": "outer",
+                        "name": "小琉球悠遊潛水",
+                        "description": "潛入海洋，用您的雙眼體驗海底世界帶給您的驚艷，讓悠遊專業教練們帶您探索美麗多變海洋。",
+                        "bh": "星期一　08:00-17:00\n星期二　08:00-17:00\n星期三　08:00-17:00\n星期四　08:00-17:00\n星期五　08:00-17:00\n星期六　08:00-17:00\n星期日　08:00-17:00",
+                        "county": "屏東縣琉球鄉",
+                        "address": "環島公路",
+                        "tel": "",
+                        "mobile": "0972 909 739",
+                        "url": "",
+                        "fb": "https://www.facebook.com/YOYODIVE/",
+                        "avg_rating": 0,
+                        "longitude": "120.35464",
+                        "latitude": "22.32861",
+                        "img1": "https://scontent.frmq2-2.fna.fbcdn.net/v/t1.0-9/61268264_854017914960128_3250810267591770112_n.jpg?_nc_cat=101&_nc_oc=AQntqWKiJNpr7k6fA3QcY6qXfjrP_Dq9TSQbTXeeR5pZ0i4LxEzTFdNHO6YWDmwBO9c&_nc_ht=scontent.frmq2-2.fna&oh=1788fec95defafaf9f5649596edfd391&oe=5DA6F5A6",
+                        "img2": "https://scontent.frmq2-1.fna.fbcdn.net/v/t1.0-9/17362496_414241755604415_7851224890745768169_n.jpg?_nc_cat=111&_nc_oc=AQmd-DGYSe8HdF274ugRoDmH9C6lekItgH3v3WbTMxERVhyS19sonRpG7bnnukmL2IA&_nc_ht=scontent.frmq2-1.fna&oh=bc80eb646db111d72a4dd1471d62e9cd&oe=5DE3315F",
+                        "img3": "https://scontent.frmq2-2.fna.fbcdn.net/v/t1.0-9/47135636_747477655614155_3262261427791986688_o.jpg?_nc_cat=101&_nc_oc=AQk3MRx8kwiZ1mIVFiyhlNr3mrA5UlBxmrq0znNxizVyFpQkQ1Bwj3ZyIiaUcYqu6ys&_nc_ht=scontent.frmq2-2.fna&oh=5197570171acaa9ede33b3de922031ca&oe=5DD2C876",
+                        "img4": "https://scontent.frmq2-1.fna.fbcdn.net/v/t1.0-9/49013949_763776853984235_111212942564786176_n.jpg?_nc_cat=106&_nc_oc=AQkdt7XtgrGwxRqvJUjlBHK0bSXZ4w2I086_caYGK-Trr06Zk4gTfyLvo56Ueo3wTp4&_nc_ht=scontent.frmq2-1.fna&oh=102e7bd9d19aa7765e6d60173def2f55&oe=5DE6A3EC",
+                        "img5": ""
+                    },
+                    {
+                        "id": 29,
+                        "created_at": "2019-08-13 05:22:47",
+                        "updated_at": "2019-08-13 05:22:47",
+                        "service": "ExploreDiving,LicenseCourse",
+                        "location": "mid",
+                        "name": "乖巧鯊潛水訓練中心",
+                        "description": "我們是結合都市裡的潛水訓練中心與濱海潛水渡假村的休閒潛水機構，提供涵蓋潛水教學、潛水旅遊、潛水渡假的全方位整體服務，隨時以絕對完美的活力，提供您最完整的享受。",
+                        "bh": "星期一　11:00-22:00\n星期二　11:00-22:00\n星期三　11:00-22:00\n星期四　11:00-22:00\n星期五　11:00-22:00 \n星期六　11:00-22:00 \n星期日　公休",
+                        "county": "台中市北區",
+                        "address": "太原路一段460-5號",
+                        "tel": "04 2202 3257",
+                        "mobile": "",
+                        "url": "www.7s.com.tw",
+                        "fb": "https://www.facebook.com/7shark/",
+                        "avg_rating": 0,
+                        "longitude": "120.668476",
+                        "latitude": "24.164945",
+                        "img1": "https://scontent.frmq2-2.fna.fbcdn.net/v/t1.0-9/51650053_2622884471071806_7399562222407516160_n.jpg?_nc_cat=100&_nc_oc=AQktk5au4RV6k7olpsANQm7fqCbAKaYmmhI58_lEPgIvzfcuoH4fr4pIiNwrFjO_W8Y&_nc_ht=scontent.frmq2-2.fna&oh=6866e60409d4348829108c4962cfbca5&oe=5DE711DE",
+                        "img2": "https://scontent.frmq2-1.fna.fbcdn.net/v/t1.0-9/53861031_2677907378902848_6700145949513089024_n.jpg?_nc_cat=102&_nc_oc=AQmoa6FsfJb314QNrT7nFJdeCenlqI0fiTYgJbYYiAxZlEe6a9CAtxk0QTMTFb43LhM&_nc_ht=scontent.frmq2-1.fna&oh=5d62e7a9f52638f75a6050b153fb6ffe&oe=5DCD2CD5",
+                        "img3": "https://scontent.frmq2-1.fna.fbcdn.net/v/t1.0-9/43101510_2422146891145566_8688131739253473280_n.jpg?_nc_cat=111&_nc_oc=AQn-L2ss5CYUJXayDCtlpnW2GH9JEkdTy61WLScOvKQzW5-iZ1J6yhXXCm6aQzMJBYE&_nc_ht=scontent.frmq2-1.fna&oh=543897237c15481bbccacbf49a2e3990&oe=5DD66739",
+                        "img4": "",
+                        "img5": ""
+                    },
+                    {
+                        "id": 35,
+                        "created_at": "2019-08-13 05:22:47",
+                        "updated_at": "2019-08-13 05:22:47",
+                        "service": "EquipmentSale",
+                        "location": "mid",
+                        "name": "探險家戶外用品",
+                        "description": "探險家，露營專家：探險家EXPLORER為露營登山潛水溯溪野炊烤肉旅遊品專賣店！豐富的品牌與產品，滿足不同消費者的需求！",
+                        "bh": "星期一　11:30-21:20\n星期二　11:30-21:20\n星期三　11:30-21:20\n星期四　11:30-21:20\n星期五　11:30-21:20\n星期六　11:30-21:20\n星期日　11:30-20:20",
+                        "county": "台中市北屯區",
+                        "address": "軍功路二段257號",
+                        "tel": "04 2439 1000",
+                        "mobile": "",
+                        "url": "https://www.camp168.com/",
+                        "fb": "https://www.facebook.com/explorer.beitun/",
+                        "avg_rating": 0,
+                        "longitude": "120.719398",
+                        "latitude": "24.181971",
+                        "img1": "https://scontent.frmq2-2.fna.fbcdn.net/v/t1.0-9/28166745_575420312795710_2178868045871524044_n.jpg?_nc_cat=104&_nc_oc=AQlFH_IVaOi8IvarGH01hjHvSSfzes0VwpISY2-72whz9tTPwCLV5-kAOhRhEKPdIsc&_nc_ht=scontent.frmq2-2.fna&oh=e5ffd89a2357e9d6666f9a82e719a4c4&oe=5DE55108",
+                        "img2": "https://scontent.frmq2-1.fna.fbcdn.net/v/t1.0-9/43576711_723116521359421_4110292068868292608_o.jpg?_nc_cat=111&_nc_oc=AQm89nJR8wBMMI-Lms79Gj_Uorh-Wn9SHYVRYzzBDjzr08n7Kv9aHvmGDxzfxYqT0F0&_nc_ht=scontent.frmq2-1.fna&oh=7afdc7526c873153935d823a23372f29&oe=5DD4B5C6",
+                        "img3": "https://scontent.frmq2-1.fna.fbcdn.net/v/t1.0-9/43576711_723116521359421_4110292068868292608_o.jpg?_nc_cat=111&_nc_oc=AQm89nJR8wBMMI-Lms79Gj_Uorh-Wn9SHYVRYzzBDjzr08n7Kv9aHvmGDxzfxYqT0F0&_nc_ht=scontent.frmq2-1.fna&oh=7afdc7526c873153935d823a23372f29&oe=5DD4B5C6",
+                        "img4": "",
+                        "img5": ""
+                    }
+                ]
+            }
+            
+## Keyword [/keyword]
+
+### Spot/Shop/Article Keyword Search [GET /keyword/{keyword}]
+
++ Parameters
+    + keyword:潛水 (Char, required) - 關鍵字(中文/英文/數字)
+
++ Response 200 (application/json)
+
+            {
+                "spot": {
+                    "current_page": 1,
+                    "data": [
+                        {
+                            "id": 30,
+                            "name": "七星岩"
+                        },
+                        {
+                            "id": 32,
+                            "name": "香蕉灣"
+                        },
+                        {
+                            "id": 33,
+                            "name": "紅柴坑漁港"
+                        },
+                        {
+                            "id": 34,
+                            "name": "石珠"
+                        },
+                        {
+                            "id": 35,
+                            "name": "南灣遊憩區"
+                        },
+                        {
+                            "id": 36,
+                            "name": "後灣"
+                        },
+                        {
+                            "id": 37,
+                            "name": "後壁湖浮潛區"
+                        },
+                        {
+                            "id": 39,
+                            "name": "山海漁港"
+                        },
+                        {
+                            "id": 40,
+                            "name": "頂白砂"
+                        },
+                        {
+                            "id": 44,
+                            "name": "基翬港"
+                        },
+                        {
+                            "id": 48,
+                            "name": "小野柳"
+                        },
+                        {
+                            "id": 49,
+                            "name": "杉原"
+                        },
+                        {
+                            "id": 50,
+                            "name": "中寮漁港"
+                        },
+                        {
+                            "id": 53,
+                            "name": "石朗潛水區"
+                        },
+                        {
+                            "id": 58,
+                            "name": "鋼鐵礁"
+                        }
+                    ],
+                    "first_page_url": "http://d407f574.ngrok.io/DivingBackend_v1/public/api/keyword/%E6%BD%9B%E6%B0%B4?page=1",
+                    "from": 1,
+                    "last_page": 1,
+                    "last_page_url": "http://d407f574.ngrok.io/DivingBackend_v1/public/api/keyword/%E6%BD%9B%E6%B0%B4?page=1",
+                    "next_page_url": null,
+                    "path": "http://d407f574.ngrok.io/DivingBackend_v1/public/api/keyword/%E6%BD%9B%E6%B0%B4",
+                    "per_page": 15,
+                    "prev_page_url": null,
+                    "to": 15,
+                    "total": 15
+                },
+                "shop": {
+                    "current_page": 1,
+                    "data": [
+                        {
+                            "id": 1,
+                            "name": "台中潛水訓練中心"
+                        },
+                        {
+                            "id": 2,
+                            "name": "海嬉潛水店 Ocean Fun Diving Shop"
+                        },
+                        {
+                            "id": 3,
+                            "name": "乖巧鯊潛水訓練中心"
+                        },
+                        {
+                            "id": 4,
+                            "name": "海洋芒果潛水裝備專賣店 台中市政店"
+                        },
+                        {
+                            "id": 5,
+                            "name": "潛立方旅館DIVECUBE HOTEL"
+                        },
+                        {
+                            "id": 6,
+                            "name": "碧海藍天國際潛水飛行聯盟"
+                        },
+                        {
+                            "id": 7,
+                            "name": "Taiwan Diving Monkey Dive Center 台灣潛水猴訓練中心&裝備用品公司"
+                        },
+                        {
+                            "id": 8,
+                            "name": "宇洋水上體育用品店"
+                        },
+                        {
+                            "id": 9,
+                            "name": "探險家戶外用品 台中北屯店"
+                        },
+                        {
+                            "id": 11,
+                            "name": "海蛞蝓技術潛水訓練中心"
+                        },
+                        {
+                            "id": 12,
+                            "name": "廣三SOGO努特生活館"
+                        },
+                        {
+                            "id": 13,
+                            "name": "野蠻紮實潛水訓練中心 Just Wild Dive Center"
+                        },
+                        {
+                            "id": 15,
+                            "name": "Free Pilot自由領航員潛水中心"
+                        },
+                        {
+                            "id": 16,
+                            "name": "PADI威鯨潛水訓練中心"
+                        },
+                        {
+                            "id": 17,
+                            "name": "藍灣潛水訓練中心"
+                        }
+                    ],
+                    "first_page_url": "http://d407f574.ngrok.io/DivingBackend_v1/public/api/keyword/%E6%BD%9B%E6%B0%B4?page=1",
+                    "from": 1,
+                    "last_page": 3,
+                    "last_page_url": "http://d407f574.ngrok.io/DivingBackend_v1/public/api/keyword/%E6%BD%9B%E6%B0%B4?page=3",
+                    "next_page_url": "http://d407f574.ngrok.io/DivingBackend_v1/public/api/keyword/%E6%BD%9B%E6%B0%B4?page=2",
+                    "path": "http://d407f574.ngrok.io/DivingBackend_v1/public/api/keyword/%E6%BD%9B%E6%B0%B4",
+                    "per_page": 15,
+                    "prev_page_url": null,
+                    "to": 15,
+                    "total": 43
+                },
+                "article": {
+                    "current_page": 1,
+                    "data": [],
+                    "first_page_url": "http://d407f574.ngrok.io/DivingBackend_v1/public/api/keyword/%E6%BD%9B%E6%B0%B4?page=1",
+                    "from": null,
+                    "last_page": 1,
+                    "last_page_url": "http://d407f574.ngrok.io/DivingBackend_v1/public/api/keyword/%E6%BD%9B%E6%B0%B4?page=1",
+                    "next_page_url": null,
+                    "path": "http://d407f574.ngrok.io/DivingBackend_v1/public/api/keyword/%E6%BD%9B%E6%B0%B4",
+                    "per_page": 15,
+                    "prev_page_url": null,
+                    "to": null,
+                    "total": 0
+                },
+                "spotTotal": 15,
+                "shopTotal": 15,
+                "articleTotal": 0
+            }
+
+            
+# Group Article
+## Article [/article]
+
+### Show Article List [GET /article]
+
++ Response 200 (application/json)
+
+            {
+                "item": {
+                    "current_page": 1,
+                    "data": [
+                        {
+                            "id": 553,
+                            "created_at": null,
+                            "updated_at": null,
+                            "category": "travel",
+                            "img": null,
+                            "date": "1556613735",
+                            "author": "tungiris970614",
+                            "title": "|蘭嶼打工換宿| 美到不用修圖的蘭嶼景點清單",
+                            "content": "\"蘭嶼的美不是幾天就可以感受完的！我在蘭嶼打工換宿一個半月的日子裡，造訪過的景點有無數！今天就來幫大家整理一下蘭嶼的景點、必去店家、必做的事吧|蘭嶼景點|小燈塔情人洞舊機場大天池需要找別人帶你上去喔！路線很複雜，很容易迷路。來回四小時！東清望海亭東清灣月光海東清秘境一線天青青草原除了以上這些之外 ，還有很多必去的景點，我就不附照片直接跟大家說啦~東清夜市、氣象站、虎頭坡、椰油國小、所有港口、祈禱山、野銀冷泉、地下屋.....好多好多~~~|蘭嶼必去店家|蘭嶼有6個部落喔 椰油、郎島、東清、紅頭、漁人、野銀。我會在店家後面被住在哪個部落，讓你們比較好尋找！甜點類：-角落Bais-(郎島)真的跟店名一樣，在一個角落到不行的地方！要花功夫找喔~ 布朗尼很好吃-島名冰狗店-(椰油)酒吧類：十一鄰(野銀)、M吧(紅頭)、Dovan Wa在海邊(朗島)。小吃類：大魯麵(椰油)、游麵子(東清)、麵小妹(椰油)。簡餐類：漂流木餐廳(漁人)、哇哇複合式餐飲(紅頭)、野孩子(東清)、人魚和貓(東清)。早餐類：東清三十三號(東清)、美亞美早餐(東清)、施路岸早餐(漁人)、阿力給早餐(紅頭)。|蘭嶼必做的事|浮潛推薦在東清部落的 猛龍美浮潛 喔！老闆幽默風趣、浮潛完還會帶你去跳港！深潛這個是有教練抓著你的體驗潛水，不會游泳的不用擔心，很安全的。再來這個是我後來回來考潛水證照~~~~~~~~~~~~~~~~~~~我都是找東清部落 就是要潛 的小威教練喔！超級推薦~~~~~價錢絕對公道，也很有耐心！除了浮潛、深潛外，還有一定要做的事就是 跳港 跟 在涼亭發呆 !!!!!!!!但是要記得蘭嶼島上所有的涼亭都是要脫鞋子才能上去的喔。最後蘭嶼真的太美了，是我最愛的台灣離島，最沒有被汙染，人都非常的熱情！我在換宿之後還有一直的回去蘭嶼玩，因為真的去不膩啊！！！我花了一個半月在蘭嶼換宿，換來的除了好好感受所有景點之外，最大的收穫就是被治癒了，蘭嶼很好治療人，等你來了才知道！\"",
+                            "url": "http://tungiris970614.pixnet.net/blog/post/285937980",
+                            "article_number": 285937980
+                        }
+                    ],
+                    "first_page_url": "http://monosparta-api.trunksys.com/api/article?page=1",
+                    "from": 1,
+                    "last_page": 1,
+                    "last_page_url": "http://monosparta-api.trunksys.com/api/article?page=1",
+                    "next_page_url": "http://monosparta-api.trunksys.com/api/article?page=1",
+                    "path": "http://monosparta-api.trunksys.com/api/article",
+                    "per_page": 1,
+                    "prev_page_url": null,
+                    "to": 1,
+                    "total": 1
+                },
+                "articleTotal": 1
+            }
+
+### Show Article Random List for home [GET /article/random]
+
++ Response 200 (application/json)
+
+            {
+                "item": [
+                    {
+                        "id": 182,
+                        "created_at": null,
+                        "updated_at": null,
+                        "category": "美味食記",
+                        "img": null,
+                        "date": "1550581798",
+                        "author": "sheex5050",
+                        "title": "我",
+                        "content": "\"喜歡安靜或平靜的地方或人貓咪跟狗都喜歡 兔子老鼠鸚鵡甚麼的還好咖啡的種類中最喜歡拿鐵喜歡去咖啡廳但沒有喜歡吃甜點每次都點有起司或乳酪的東西 阿可是喜歡焦糖布丁和提拉米蘇威士忌可以純飲  調酒的話偏向基底萊姆酒 不愛奶酒橙酒會想吐會畫畫也會寫日記尤其心情不好時比較喜歡自己一個人看電影 爆米花吃混合口味的運動中最喜歡游泳和籃球  在培養自己騎自行車和跑步未來希望可以花些時間多多爬山跟學潛水喜歡玩遊戲 而且不喜歡輸 也不喜歡被比我強的人carry不算太沉迷於下廚覺得有點麻煩但其實滿想學的也會想要煮飯給喜歡的人吃最喜歡蛋! 只要有蛋的料理我都很喜歡!心情不好時會一直想睡覺刷完廁所洗床單吸地板後心情會有點暢快討厭麻煩遇到麻煩事第一個念頭是逃避很害怕吵架應該說很害怕情緒性的吵架如果是工作上的理性溝通我倒是一點都不害怕直說我覺得不合理的地方非常不愛逛街希望自己可以當一個真誠善良的人一個人旅行時覺得有無聊跟喜歡的人去哪裡都很開心!但我還是不想要去逛街如果去遊樂園會很開心!覺得自己算滿好相處的人吧是吧~? 是啦!\"",
+                        "url": "http://sheex5050.pixnet.net/blog/post/403768979",
+                        "article_number": 403768979
+                    }
+                ]
+            }
+
+### Show Article Category List [GET /article/category/{category}]
+
++ Parameters
+    + category: travel (Char, required) - 類別
+        + All available parameters
+          | category | Value    |
+          | :-----:  | :-----:  |
+          | 知識     | knowledge|
+          | 旅遊     | travel   |
+          | 證照     | license  |
+
+
++ Response 200 (application/json)
+
+            {
+                "item": {
+                    "current_page": 1,
+                    "data": [
+                        {
+                            "id": 2,
+                            "created_at": null,
+                            "updated_at": null,
+                            "category": "travel",
+                            "img": null,
+                            "date": "1532858682",
+                            "author": "justineicdi",
+                            "title": "【旅遊】蘭嶼四天三夜--住宿篇",
+                            "content": "\"每個人對於生活、旅遊追求的東西都不同對於住宿的品質也是這次到蘭嶼旅行我們是三個人一起去在住宿方面只求有個地方可以睡覺就行了剛好就有朋友推薦蘭嶼的「星夜民宿」然後，我們就訂了我們買四天三夜套裝行程一個人一晚是1000元又租車費用分攤100元一人總共要付3100元但是民宿原本有供應早餐不過因為原料的關係現在不提供因此他們又退還給我們一人150元換言之，我們一人總共付2950元那套裝行程有什麼呢？機車（兩人一台）浮潛一次三人一間房間▲房間相當簡單，兩張雙人床有冷氣、電風扇、吹風機、垃圾桶但是衛浴設備要去外面也就是說，洗澡、上廁所要跟別的房客輪流共用整個民宿有提供洗衣機、晒衣場廁所含衛浴，共四間我覺得，如果你是跟我們一樣只希望有個地方可以睡覺、洗澡住這邊滿好的我覺得這裡的房間雖然設備簡單但床滿好睡的房間也不熱像第一天我們根本沒有吹冷氣睡覺後面的兩天也是定時二小時而已再者，民宿老闆人也非常好因為我朋友不能去潛水他們又再退錢回來最後一天，我們差點趕不上船老闆也一直安慰我們說別著急，再幫我們載行李去港口還提醒我們別當錯船了整個人超好的更送了我們一袋蘭嶼特產的龍眼與鳳梨如果有興趣可以搜尋「星夜民宿」喔！http://www.lanyu-starrynight.com/index.php\"",
+                            "url": "http://justineicdi.pixnet.net/blog/post/201577706",
+                            "article_number": 201577706
+                        }
+                    ],
+                    "first_page_url": "http://monosparta-api.trunksys.com/api/article/category/travel?page=1",
+                    "from": 1,
+                    "last_page": 1,
+                    "last_page_url": "http://monosparta-api.trunksys.com/api/article/category/travel?page=1",
+                    "next_page_url": "http://monosparta-api.trunksys.com/api/article/category/travel?page=1",
+                    "path": "http://monosparta-api.trunksys.com/api/article/category/travel",
+                    "per_page": 1,
+                    "prev_page_url": null,
+                    "to": 1,
+                    "total": 1
+                },
+                "categoryTotal": 1
+            }
+            
+### Show Certain Article Detial [GET /article/{id}]
+
++ Parameters
+    + id:2 (INT, required) - Certain article id.
+
++ Response 200 (application/json)
+
+            {
+                "item": [
+                    {
+                        "id": 2,
+                        "created_at": null,
+                        "updated_at": null,
+                        "category": "travel",
+                        "img": null,
+                        "date": "1532858682",
+                        "author": "justineicdi",
+                        "title": "【旅遊】蘭嶼四天三夜--住宿篇",
+                        "content": "\"每個人對於生活、旅遊追求的東西都不同對於住宿的品質也是這次到蘭嶼旅行我們是三個人一起去在住宿方面只求有個地方可以睡覺就行了剛好就有朋友推薦蘭嶼的「星夜民宿」然後，我們就訂了我們買四天三夜套裝行程一個人一晚是1000元又租車費用分攤100元一人總共要付3100元但是民宿原本有供應早餐不過因為原料的關係現在不提供因此他們又退還給我們一人150元換言之，我們一人總共付2950元那套裝行程有什麼呢？機車（兩人一台）浮潛一次三人一間房間▲房間相當簡單，兩張雙人床有冷氣、電風扇、吹風機、垃圾桶但是衛浴設備要去外面也就是說，洗澡、上廁所要跟別的房客輪流共用整個民宿有提供洗衣機、晒衣場廁所含衛浴，共四間我覺得，如果你是跟我們一樣只希望有個地方可以睡覺、洗澡住這邊滿好的我覺得這裡的房間雖然設備簡單但床滿好睡的房間也不熱像第一天我們根本沒有吹冷氣睡覺後面的兩天也是定時二小時而已再者，民宿老闆人也非常好因為我朋友不能去潛水他們又再退錢回來最後一天，我們差點趕不上船老闆也一直安慰我們說別著急，再幫我們載行李去港口還提醒我們別當錯船了整個人超好的更送了我們一袋蘭嶼特產的龍眼與鳳梨如果有興趣可以搜尋「星夜民宿」喔！http://www.lanyu-starrynight.com/index.php\"",
+                        "url": "http://justineicdi.pixnet.net/blog/post/201577706",
+                        "article_number": 201577706
+                    }
+                ]
+            }
+
+# Group Comment
+## Comment [/comment]
+
+### Add Comment [POST /comment]
+commentable_id is spot/shop id,it will add the comment with
+certain spot/shop id.
+
+About commentable_type,if the comment is about spot,
+you must to use "commentable_type": "App//Spot".
+If the comment is about shop,you must to use
+"commentable_type": "App//Shop".
+
++ Request (application/json)
+
+            {
+                "comment" : "Add your comment here!",
+                "rating" : "4",
+                "user_id" : "",
+                "spot_id" : "5"
+            }
+
++ response 201 (application/json)
+
+            {
+                "code": 201,
+                "message": "comment added successfully",
+                "comment": {
+                    "comment": "Add your comment here!",
+                    "rating": "4",
+                    "user_id": null,
+                    "updated_at": "2019-08-23 02:43:35",
+                    "created_at": "2019-08-23 02:43:35",
+                    "id": 101
+                }
+            }
+
+### Delect Comment [DELETE /comment/{id}]
+
++ Parameters
+    + id:102 (INT, required) - Certain comment id.
+
++ Response 200 (application/json)
+
+            {
+                "code": 200,
+                "message": "Task deleted successfully",
+                "comment": {
+                    "id":101,
+                    "created_at": "2019-08-23 02:43:35",
+                    "updated_at": "2019-08-23 02:43:35",
+                    "comment": "Add your comment here!",
+                    "rating": 4,
+                    "user_id": null
+                }
+            }
+            
++ Response 400 (application/json)
+
+            {
+                "code": 400,
+                "message": "This comment does not exist"
+            }
